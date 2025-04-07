@@ -1,0 +1,126 @@
+from PIL import Image, ImageDraw
+import random
+
+# Parâmetros do jogo
+grid_width, grid_height = 30, 10
+cell_size = 25
+total_frames = 120
+snake = [(5, 5)]
+direction = (1, 0)
+apples = []
+obstacles = []
+frames = []
+score = 0
+max_apples = 3
+max_obstacles = 8
+
+# Cores
+bg_color = (20, 20, 20)
+snake_color = (0, 200, 0)
+head_color = (0, 255, 0)
+eye_color = (0, 0, 0)
+apple_color = (255, 0, 0)
+obstacle_color = (100, 100, 255)
+border_color = (70, 70, 70)
+
+# Função para desenhar o cenário
+def draw_scene(snake, apples, obstacles):
+    img = Image.new("RGB", (grid_width * cell_size, grid_height * cell_size), bg_color)
+    draw = ImageDraw.Draw(img)
+
+    # Grade do cenário
+    for x in range(grid_width):
+        for y in range(grid_height):
+            draw.rectangle(
+                [x * cell_size, y * cell_size, (x+1) * cell_size - 1, (y+1) * cell_size - 1],
+                outline=border_color
+            )
+
+    # Obstáculos
+    for ox, oy in obstacles:
+        draw.rectangle([
+            ox * cell_size + 4, oy * cell_size + 4,
+            (ox+1) * cell_size - 4, (oy+1) * cell_size - 4
+        ], fill=obstacle_color)
+
+    # Maçãs
+    for ax, ay in apples:
+        draw.ellipse([
+            ax * cell_size + 6, ay * cell_size + 6,
+            (ax+1) * cell_size - 6, (ay+1) * cell_size - 6
+        ], fill=apple_color)
+
+    # Corpo da cobra
+    for i, (x, y) in enumerate(snake):
+        color = head_color if i == 0 else snake_color
+        draw.rectangle([
+            x * cell_size + 3, y * cell_size + 3,
+            (x+1) * cell_size - 3, (y+1) * cell_size - 3
+        ], fill=color)
+
+    # Olhos da cabeça
+    if snake:
+        hx, hy = snake[0]
+        center_x = hx * cell_size + cell_size // 2
+        center_y = hy * cell_size + cell_size // 2
+        eye_offset = 5
+        draw.ellipse([
+            center_x - eye_offset - 2, center_y - eye_offset - 2,
+            center_x - eye_offset + 2, center_y - eye_offset + 2
+        ], fill=eye_color)
+        draw.ellipse([
+            center_x + eye_offset - 2, center_y - eye_offset - 2,
+            center_x + eye_offset + 2, center_y - eye_offset + 2
+        ], fill=eye_color)
+
+    return img
+
+# Função para gerar maçãs ou obstáculos em lugares livres
+def spawn_item(occupied):
+    while True:
+        pos = (random.randint(0, grid_width - 1), random.randint(0, grid_height - 1))
+        if pos not in occupied:
+            return pos
+
+# Loop principal para animação
+for frame_num in range(total_frames):
+    head_x, head_y = snake[0]
+
+    # Movimento aleatório a cada 8 frames
+    if frame_num % 8 == 0:
+        direction = random.choice([(1,0), (-1,0), (0,1), (0,-1)])
+
+    new_head = (head_x + direction[0], head_y + direction[1])
+
+    # Verifica colisões
+    if (new_head in snake or new_head in obstacles or
+        not (0 <= new_head[0] < grid_width) or
+        not (0 <= new_head[1] < grid_height)):
+        print("Game Over por colisão!")
+        break
+
+    # Move a cobra
+    snake.insert(0, new_head)
+
+    # Come maçã ou move normalmente
+    if new_head in apples:
+        apples.remove(new_head)
+        score += 1
+    else:
+        snake.pop()
+
+    # Geração de maçãs
+    while len(apples) < max_apples:
+        apples.append(spawn_item(snake + apples + obstacles))
+
+    # Geração de obstáculos
+    while len(obstacles) < max_obstacles:
+        obstacles.append(spawn_item(snake + apples + obstacles))
+
+    # Salva o frame
+    frames.append(draw_scene(snake, apples, obstacles))
+
+# Salva o GIF
+frames[0].save("snake_detailed.gif", save_all=True, append_images=frames[1:], optimize=False, duration=180, loop=0)
+
+print("GIF salvo como 'snake_detailed.gif'!")
