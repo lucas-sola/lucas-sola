@@ -1,0 +1,23 @@
+from PIL import Image, ImageDraw, ImageFont
+import imageio
+import os
+
+# Configurações
+frames = []
+width, height = 500, 200
+font_path = "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf"  # Altere se necessário
+font = ImageFont.truetype(font_path, 40)
+
+for i in range(10):
+    # Alterna entre visível e invisível
+    text = "Lucas Sola" if i % 2 == 0 else ""
+    img = Image.new("RGB", (width, height), color=(10, 10, 10))
+    draw = ImageDraw.Draw(img)
+    w, h = draw.textsize(text, font=font)
+    draw.text(((width - w) / 2, (height - h) / 2), text, font=font, fill=(255, 255, 255))
+    frames.append(img)
+
+# Salvar como GIF
+output_path = "lucas_sola.gif"
+frames[0].save(output_path, save_all=True, append_images=frames[1:], optimize=False, duration=500, loop=0)
+print("GIF salvo como:", output_path)
