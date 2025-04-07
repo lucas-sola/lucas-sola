@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img src="lucas-sola.gif" alt="lucas-sola" />
+  <img src="lucas_sola.gif" alt="lucas_sola" />
 </p>
 
 ---
