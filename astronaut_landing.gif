@@ -37,7 +37,3 @@ for i in range(total_frames):
     draw.line([215, astronaut_y + 10, 230, astronaut_y + 20], fill=astronaut_color, width=3)
 
     frames.append(img)
-
-# Salvar GIF
-frames[0].save("astronaut_landing.gif", save_all=True, append_images=frames[1:], optimize=False, duration=100, loop=0)
-print("GIF salvo como astronaut_landing.gif!")
