@@ -25,15 +25,8 @@
 ---
 
 <p align="center">
-  <img src="lucas_sola.gif" alt="Lucas Sola animado" />
-</p>
-
----
-
-<p align="center">
   <img src="snake_detailed.gif" alt="Cobrinha Detalhada" />
 </p>
-
 
 ---
 
