@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img src="lucas_sola.gif" alt="lucas_sola" />
+  <img src="snake.gif" alt="Snake Game Animation" />
 </p>
 
 ---
