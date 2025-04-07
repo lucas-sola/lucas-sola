@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img src="astronaut_landing.gif" alt="Astronauta Pousando" />
+  <img src="astronaut_landing.gif" alt="Astronauta pousando em planeta" />
 </p>
 
 ---
