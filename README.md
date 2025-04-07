@@ -31,7 +31,7 @@
 ---
 
 <p align="center">
-  <img src="zigzag_snake.gif" alt="Snake Game Animation with Apples" />
+  <img src="snake_detailed.gif" alt="Cobrinha Detalhada" />
 </p>
 
 
