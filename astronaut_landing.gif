@@ -1,0 +1,43 @@
+from PIL import Image, ImageDraw
+import random
+
+# Configurações da imagem
+width, height = 400, 400
+frames = []
+total_frames = 60
+
+# Cores
+space_color = (10, 10, 30)
+planet_color = (80, 40, 20)
+astronaut_color = (255, 255, 255)
+visor_color = (100, 200, 255)
+star_color = (255, 255, 180)
+
+def draw_stars(draw):
+    for _ in range(25):
+        x, y = random.randint(0, width), random.randint(0, height // 2)
+        draw.ellipse((x, y, x + 2, y + 2), fill=star_color)
+
+# Animação do pouso
+for i in range(total_frames):
+    img = Image.new("RGB", (width, height), space_color)
+    draw = ImageDraw.Draw(img)
+
+    draw_stars(draw)
+    draw.ellipse([50, height - 80, width - 50, height + 80], fill=planet_color)
+
+    astronaut_y = int(height - 120 - (total_frames - i) * 3)
+
+    draw.rectangle([185, astronaut_y, 215, astronaut_y + 40], fill=astronaut_color)
+    draw.rectangle([190, astronaut_y - 20, 210, astronaut_y], fill=visor_color)  # Capacete
+
+    draw.line([185, astronaut_y + 40, 180, astronaut_y + 55], fill=astronaut_color, width=3)
+    draw.line([215, astronaut_y + 40, 220, astronaut_y + 55], fill=astronaut_color, width=3)
+    draw.line([185, astronaut_y + 10, 170, astronaut_y + 20], fill=astronaut_color, width=3)
+    draw.line([215, astronaut_y + 10, 230, astronaut_y + 20], fill=astronaut_color, width=3)
+
+    frames.append(img)
+
+# Salvar GIF
+frames[0].save("astronaut_landing.gif", save_all=True, append_images=frames[1:], optimize=False, duration=100, loop=0)
+print("GIF salvo como astronaut_landing.gif!")
