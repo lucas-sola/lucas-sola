@@ -24,12 +24,6 @@
 
 ---
 
-<p align="center">
-  <img src="astronaut_landing.gif" alt="Astronauta pousando em planeta" />
-</p>
-
----
-
 ### 📫 Mande sua DM!
 
 [![discord]
