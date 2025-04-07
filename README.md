@@ -27,15 +27,15 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=seu-usuario&show_icons=true&theme=radical" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com?user=seu-usuario&theme=radical" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?lucas.sola&show_icons=true&theme=radical" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com?lucas.sola&theme=radical" />
 </div>
 
 ---
 
 ### 🧠 Repositórios em destaque
 
-[![Readme Card]
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=lucas.sola&repo=exercicios_em_aula&theme=radical)](https://github.com/lucas.sola/exercicios_em_aula)
 
 ---
 
