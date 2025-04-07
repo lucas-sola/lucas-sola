@@ -25,8 +25,15 @@
 ---
 
 <p align="center">
-  <img src="snake.gif" alt="Snake Game Animation" />
+  <img src="lucas_sola.gif" alt="Lucas Sola animado" />
 </p>
+
+---
+
+<p align="center">
+  <img src="zigzag_snake.gif" alt="Snake Game Animation with Apples" />
+</p>
+
 
 ---
 
