@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img src="snake_detailed.gif" alt="Cobrinha Detalhada" />
+  <img src="astronaut_landing.gif" alt="Astronauta Pousando" />
 </p>
 
 ---
