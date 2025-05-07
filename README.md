@@ -1,8 +1,8 @@
 ### 👋 Sobre mim
 
 - 🔭 Atualmente trabalhando em projetos pessoais
-- 🌱 Aprendendo **Python**, **HTTPS**, **NODE.JS**, **JAVASCRIPT** e **PHP**
-- 💬 Pergunte-me sobre desenvolvimento web, automações, ou bots
+- 🌱 Aprendendo ***Python***, ***HTTPS***, ***NODE.JS***, ***JAVASCRIPT*** e ***PHP***
+- 💬 Pergunte-me sobre desenvolvimento web, automações, bots ou montagem de dispositivos!
 - 📫 Como me encontrar: [lucxz.sola](https://www.instagram.com/lucas.sola/)
 
 -----
