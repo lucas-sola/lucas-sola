@@ -3,7 +3,7 @@
 - 🔭 Atualmente trabalhando em projetos pessoais
 - 🌱 Aprendendo **Python**, **HTTPS**, **NODE.JS**, **JAVASCRIPT** e **PHP**
 - 💬 Pergunte-me sobre desenvolvimento web, automações, ou bots
-- 📫 Como me encontrar: [lucxz.sola](instagram.com)
+- 📫 Como me encontrar: [lucxz.sola](https://www.instagram.com/lucas.sola/)
 
 -----
 
@@ -20,4 +20,4 @@
 
 ### 📫 Mande sua DM!
 
-[lucxz.sola](instagram.com)
+[lucxz.sola](https://www.instagram.com/lucas.sola/)
