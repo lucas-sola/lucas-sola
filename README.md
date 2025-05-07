@@ -1,7 +1,3 @@
-![Snake animation](https://github.com/lucas-sola/lucas-sola/blob/output/github-contribution-grid-snake.gif)
-
------
-
 ### 👋 Sobre mim
 
 - 🔭 Atualmente trabalhando em projetos pessoais
