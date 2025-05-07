@@ -2,16 +2,16 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&color=F7A41D&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Olá%2C+eu+sou+um+desenvolvedor!;Interessado+por+tecnologia+e+inovação.;Bem-vindo+ao+meu+GitHub+profile!+👨‍💻" alt="Typing SVG" />
 </p>
 
----
+-----
 
 ### 👋 Sobre mim
 
 - 🔭 Atualmente trabalhando em projetos pessoais
 - 🌱 Aprendendo **Python**, **HTTPS**, **NODE.JS**, **JAVASCRIPT** e **PHP**
 - 💬 Pergunte-me sobre desenvolvimento web, automações, ou bots
-- 📫 Como me encontrar: [insta aq)
+- 📫 Como me encontrar: [lucxz.sola](instagram.com)
 
----
+-----
 
 ### 🚀 Tecnologias & Ferramentas 
 
@@ -22,9 +22,8 @@
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
----
+-----
 
 ### 📫 Mande sua DM!
 
-[![discord]
-[![insta]
+[lucxz.sola](instagram.com)
