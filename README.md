@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=500&color=F7A41D&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Olá%2C+eu+sou+um+desenvolvedor!;Interessado+por+tecnologia+e+inovação.;Bem-vindo+ao+meu+GitHub+profile!+👨‍💻" alt="Typing SVG" />
-</p>
+![Snake animation](https://github.com/lucas-sola/lucas-sola/blob/output/github-contribution-grid-snake.gif)
 
 -----
 
