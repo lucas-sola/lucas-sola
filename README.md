@@ -1,9 +1,9 @@
 ### 👋 Sobre mim
 
 - 🔭 Atualmente trabalhando em projetos pessoais
-- 🌱 Aprendendo ***Python***, ***HTTPS***, ***NODE.JS***, ***JAVASCRIPT*** e ***PHP***
+- 🌱 Aprendendo ***Python***, ***HTTPS***, ***NODE.JS***, ***JAVASCRIPT***, ***SQL*** e ***LUA***
 - 💬 Pergunte-me sobre desenvolvimento web, automações, bots ou montagem de dispositivos!
-- 📫 Como me encontrar: [lucxz.sola](https://www.instagram.com/lucas.sola/)
+- 📫 Como me encontrar: [sola4real_](https://www.instagram.com/sola4real_/)
 
 -----
 
@@ -15,9 +15,3 @@
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
------
-
-### 📫 Mande sua DM!
-
-[lucxz.sola](https://www.instagram.com/lucas.sola/)
